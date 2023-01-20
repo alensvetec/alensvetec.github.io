@@ -12,7 +12,7 @@
 }
 
 .navbar{
-    background-color: #F5591B;
+    background-color: #fff;
     display: flex;
     justify-content: space-around;
     height: 5rem;
@@ -24,16 +24,27 @@
     border-radius: 50%;
     position: left;
     margin: 8px;
+    box-shadow: 5px 5px 4px #F5591B;
 }
 
 .nav-button{
     display: flex;
     gap: 25px;
-    overflow: hidden;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  animation-name: example;
+  animation-duration: 1s;
 }
 
 .icon{
     display: none;
+    color: #000;
+    filter: drop-shadow(5px 5px 4px #F5591B);
 }
 
 a{
@@ -80,6 +91,8 @@ button {
     height: 3rem;
     width: 6rem;
     margin-top: 15px;
+    box-shadow: 5px 5px 4px #F5591B;
+    border-radius: 5px;
    }
    
    button span {
@@ -122,7 +135,7 @@ button {
 
    .about{
     position: relative;
-    height: 600px;
+    height: 400px;
    }
 
    .background-img{
@@ -135,9 +148,10 @@ button {
     display: block;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
-    text-align:center;
+    text-align:left;
+    max-width: 1440px;
    }
 
    .top-gradient{
@@ -146,7 +160,7 @@ button {
     left: 0;
     width: 100%;
     height: 120px;
-    background: linear-gradient(to top, transparent, #F5591B);
+    background: linear-gradient(to top, transparent, #fff);
     z-index: 0;
    }
 
@@ -156,8 +170,12 @@ button {
     left: 0;
     width: 100%;
     height: 120px;
-    background: linear-gradient(to bottom, transparent, #F5591B);
+    background: linear-gradient(to bottom, transparent, #fff);
     z-index: 0;
+   }
+
+   .about-txt button{
+    color: #000;
    }
 
 @media screen and (max-width:700px){
@@ -178,20 +196,21 @@ button {
     }
     .nav-button.responsive {
         position: absolute;
-        top: 75px;
+        top: 80px;
         height: 260px;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0px;
-        background-color: #F5591B;
+        background-color: #fff;
     }
     .nav-button.responsive a {
         display: flex;
     }
     .nav-button.responsive button {
         width: 16rem;
+        box-shadow: 5px 5px 4px #F5591B;
     }
    
     button span::before {
@@ -201,17 +220,24 @@ button {
     }
 
   .about{
-   height: 700px;
+   height: 330px;
   }
 
   .about-txt{
-    top: 15%;
+    top: 25%;
     left: 15%;
     transform: translate(-9%, 0%);
    }
 
    .about.responsive{
-    position: absolute;
-    top: 335px;
+    top: 260px;
+   }
+
+   .top-gradient{
+    height: 60px;
+   }
+
+   .bottom-gradient{
+    height: 60px;
    }
 }
