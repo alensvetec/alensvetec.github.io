@@ -16,6 +16,45 @@
     }
   }
 
+  function myFunction3() {
+    var x = document.getElementById("article-section");
+    if (x.className == "article-section") {
+      x.className += " responsive";
+    } else {
+      x.className = "article-section";
+    }
+  }
+
+  function myFunction4() {
+    var x = document.getElementById("naslov-section");
+    var y = document.getElementById("text-section")
+    if (x.className == "naslov-section") {
+      x.className += " responsive";
+      y.className += " responsive";
+    } else {
+      x.className = "naslov-section";
+      y.className = "text-section";
+    }
+  }
+
+  function myFunction5() {
+    var x = document.getElementById("naslov-section");
+    var y = document.getElementById("contact-section");
+    var z = document.getElementById("form-section");
+    var a = document.getElementById("footer");
+    if (x.className == "naslov-section") {
+      x.className += " responsive";
+      y.className += " responsive";
+      z.className += " responsive";
+      a.className += " responsive";
+    } else {
+      x.className = "naslov-section";
+      y.className = "contact-section";
+      z.className = "form-section";
+      a.className = "footer about-footer";
+    }
+  }
+
   let slideIndex = 1;
   showSlides(slideIndex);
   
@@ -53,3 +92,20 @@ function navbarFunction() {
 }
 
 window.addEventListener("scroll", navbarFunction);
+
+function initMap() {
+  
+  const loc = { lat: 45.6126942, lng: 18.7588205 };
+  
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: loc,
+  });
+  
+  const marker = new google.maps.Marker({
+    map: map,
+    position: loc,
+  });
+}
+
+window.initMap = initMap;

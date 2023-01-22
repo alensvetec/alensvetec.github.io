@@ -41,6 +41,7 @@ body{
 .nav-button{
     display: flex;
     gap: 25px;
+    margin-top: 15px;
 }
 
 .fixed {
@@ -61,6 +62,7 @@ body{
 a{
     text-decoration: none;
     color: #fff;
+    height: fit-content;
 }
 
 .link{
@@ -101,7 +103,6 @@ button {
     z-index: 1;
     height: 3rem;
     width: 6rem;
-    margin-top: 15px;
     box-shadow: 5px 5px 4px #F5591B;
     border-radius: 5px;
    }
@@ -439,7 +440,6 @@ div .active {
 
   .footer-logo{
     flex-direction: column;
-    width: 30%;
   }
 
   .footer-logo a{
@@ -472,6 +472,204 @@ div .active {
     top: 20px;
   }
 
+  .footer-content .not-mobile{
+    width: 30%;
+    display: flex;
+  }
+
+  .naslov-section{
+    position: relative;
+    width: 100%;
+    background-color: #13A868;
+    height: 100px;
+  }
+
+  .naslov-article{
+    display: block;
+    position: absolute;
+    top: 15%;
+    text-align:left;
+    max-width: 1440px;
+  }
+
+  .naslov-section .top-gradient{
+    height: 40px;
+  }
+
+  .naslov-section .bottom-gradient{
+    height: 40px;
+  }
+
+  .about-footer{
+    position: relative;
+    top: 50px;
+  }
+
+  .about-navbar{
+    background-color: #13A868;
+  }
+
+  .about-navbar button span{
+    border-color: #F5591B;
+  }
+
+  .about-navbar button{
+    color: #000;
+    box-shadow: 5px 5px 4px #333;
+  }
+
+  .about-navbar button:hover span::before {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    background: #F5591B;
+   }
+
+   .background-section{
+    position: relative;
+    top: 25px;
+   }
+
+   .background-article{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   }
+
+   .vrijednosti-section{
+    position: relative;
+   }
+
+   .vrijednosti-article{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+   }
+
+   .vrijednosti-article hr{
+    position: relative;
+    top: -10px;
+   }
+
+   .text-section{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+   }
+
+   .vrijednosti-article ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   }
+
+   .vrijednosti-article li{
+    position: relative;
+    left: 25px;
+   }
+
+   .misija-section{
+    position: relative;
+   }
+
+   .misija-article{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+   }
+
+   .misija-article hr{
+    position: relative;
+    top: -10px;
+   }
+
+   .gallery-section{
+    position: relative;
+   }
+
+   .gallery-article{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+   }
+
+   .gallery-article hr{
+    position: relative;
+    top: -10px;
+   }
+
+   .gallery-article img{
+    width: 300px;
+    border-radius: 5px;
+   }
+
+   .gallery-imgs{
+    display: flex;
+    gap: 10px;
+    overflow: scroll;
+   }
+
+   .contact-section{
+    margin-top: 20px;
+   }
+
+   
+   .contact-info a{
+    color: #000;
+   }
+
+   .form-div form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+   }
+
+   .form-div {
+    padding-top: 15px;
+   }
+
+   input{
+    border-radius: 15px;
+    height: 25px;
+    padding-left: 5px;
+   }
+
+   input:focus{
+    outline: 2px solid #13A868;
+   }
+
+   textarea{
+    border-radius: 15px;
+    resize: none;
+    padding-left: 5px;
+    padding-top: 5px;
+   }
+
+   textarea:focus{
+    outline: 2px solid #13A868;
+   }
+
+   .submit-button{
+    width: 100px;
+    margin: 0 auto;
+    background-color: #F5591B;
+    border: 2px;
+    border-color: #F5591B;
+    box-shadow: 5px 5px 4px #F5591B;
+   }
+
+   .submit-button:hover{
+    box-shadow: 5px 5px 4px #000;
+   }
+
+   .map-section{
+    margin-top: 25px;
+   }
+
+   .map{
+    text-align: center;
+   }
+
 @keyframes fade {
     from {
       opacity: 0;
@@ -486,11 +684,28 @@ div .active {
     .container{
         max-width: 670px;
     }
+    
+
+  .footer-logo p{
+    padding-top: 0;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+  .gallery-imgs-mobile{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 880px) {
     .container{
         max-width: 850px;
+    }
+
+    .footer-logo p{
+      padding-top: 1rem;
     }
 
     .hide-tablet{
@@ -532,6 +747,11 @@ div .active {
 }
 
 @media screen and (max-width:700px){
+
+    .container{
+        max-width: 350px;
+    }
+
     .nav-button a{
         display: none;
     }
@@ -555,8 +775,10 @@ div .active {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0px;
+        gap: 15px;
+        margin-top: 0px;
         background-color: #fff;
+        padding-top: 10px;
     }
     .nav-button.responsive a {
         display: flex;
@@ -567,30 +789,128 @@ div .active {
     }
    
     button span::before {
-     transition: all 0.37s;
-     width: 24%;
-     height: 700%;
+        transition: all 0.37s;
+        width: 24%;
+        height: 700%;
     }
 
-  .about{
-   height: 330px;
-  }
+    .about{
+        height: 330px;
+    }
 
-  .about-txt{
-    top: 25%;
-    left: 15%;
-    transform: translate(-9%, 0%);
+    .about-txt{
+        top: 25%;
+        left: 15%;
+        transform: translate(-9%, 0%);
+    }
+
+    .about.responsive{
+        top: 260px;
+    }
+
+    .top-gradient{
+        height: 60px;
+    }
+
+    .bottom-gradient{
+        height: 60px;
+    }
+
+    .article-section.responsive{
+        position: relative;
+        top: 260px;
+    }
+
+    .article-left{
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+    }
+
+    .article-content{
+        width: 100%;
+    }
+
+    .not-mobile{
+        display: none !important;
+    }
+
+    .mobile{
+        display: flex;
+    }
+
+    .article-right{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .custom-shape-divider-top-1674186541{
+        top: -10px;
+        z-index: -1;
+    }
+
+    .fact-section{
+        text-align: center;
+    }
+
+    .footer-content .footer-logo{
+        display: none;
+    }
+
+    .vrijednosti-article li{
+        width: 300px;
+    }
+
+    .gallery-imgs-mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 5px;
+        align-items: center;
+    }
+
+    .about-navbar .nav-button.responsive{
+        background-color: #13A868 !important;
+    }
+
+    .naslov-section.responsive{
+        position: relative;
+        top: 260px;
+    }
+
+    .text-section.responsive{
+        position: relative;
+        top: 260px;
+    }
+
+    
+
+   .contact-article{
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   }
+   .contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 2rem;
    }
 
-   .about.responsive{
+   .contact-section.responsive{
+    position: relative;
     top: 260px;
    }
 
-   .top-gradient{
-    height: 60px;
+   .form-section.responsive{
+    position: relative;
+    top: 260px;
    }
 
-   .bottom-gradient{
-    height: 60px;
+   .footer.about-footer.responsive{
+    position: relative;
+    top: 260px;
    }
+
 }

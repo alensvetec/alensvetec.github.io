@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    <link rel="icon" type="image/x-icon" href="images/trees.png">
 </head>
 <body>
   <div class="navbar" id="navbar" >
@@ -17,12 +18,12 @@
       </a>
     </div>
     <div class="nav-button" id="dropdown-nav">
-      <a href="#">
+      <a href="index.html">
         <button> Naslovnica
           <span></span>
         </button>
       </a>
-      <a href="#about">
+      <a href="pages/about.html">
         <button> O nama
           <span></span>
         </button>
@@ -32,13 +33,13 @@
           <span></span>
         </button>
       </a>
-      <a href="#">
+      <a href="pages/contact.html">
         <button> Kontakt
           <span></span>
         </button>
       </a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction(); myFunction2()">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction(); myFunction2(); myFunction3()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -66,21 +67,24 @@
     <div class="bottom-gradient"></div>
   </section>
 
-  <section class="article-section">
+  <section class="article-section" id="article-section">
     <div class="container">
+      <div class="article-image mobile">
+        <img src="images/dolac-market.jpg" alt="dolac plac">
+      </div>
       <article class="article-left">
         <div class="article-content">
-          <h2>OPG Čudesna šuma</h2>
+          <h2 class="not-mobile">OPG Čudesna šuma</h2>
           <p class="subtext"><strong>Koja je naša misija?</strong></p>
           <p>Mi smo obiteljski OPG koji se već deset godina brine da na stolu svakoga dana imate domaće voće i povrće koje nije tretirano pesticidima. </p>
           <p>Hrana je za nas izvor snage, sreće i zdravlja te želimo da to bude i vama!</p>
-          <a href="#">
+          <a href="pages/about.html">
             <button> Naša priča
               <span></span>
             </button>
           </a>
         </div>
-        <div class="article-image">
+        <div class="article-image not-mobile">
           <img src="images/dolac-market.jpg" alt="dolac plac">
         </div>
       </article>
@@ -112,11 +116,13 @@
   </div>
   <section class="fact-section">
     <div class="container">
-      <h2>Sigurno i ukusno!</h2>
-      <h4>Svježe s polja!</h4>
-      <p>Naši proizvodi pogodni su za osobe koje pate od alergija, kao i za one
+      <div class="fact-mobile">
+        <h2>Sigurno i ukusno!</h2>
+        <h4>Svježe s polja!</h4>
+        <p>Naši proizvodi pogodni su za osobe koje pate od alergija, kao i za one
         najmlađe jer nisu tretirani pesticidima. Kupujte mirno i uživajte u kvalitetnoj hrani po
         pristupačnim cijenama!</p>
+      </div>
     </div>
     <div class="custom-shape-divider-top-1674186541 bottom">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -138,7 +144,7 @@
           <p>Pronađite nas na tržnici svakoga dana osim nedjelje, od 7 do 13:30 sati.</p>
           <p>Rado ćemo vam odgovoriti na sva pitanja i pomoći u odabiru voća i povrća koje najbolje odgovara vašim potrebama. </p>
           <p class="hide-tablet">Ako želite, posjetiti nas možete i na našem OPG-u te se uvjeriti u podrijetlo naših proizvoda! </p>
-          <a href="#">
+          <a href="pages/contact.html">
             <button> Lokacija
               <span></span>
             </button>
@@ -204,11 +210,13 @@
   <div class="footer">
     <div class="container">
       <div class="footer-content">
-        <div class="footer-logo">
-          <a href="index.html">
-            <img src="images/logo.jpg" alt="">
-          </a>
-          <p>Mi smo obiteljski OPG koji se već deset godina brine da na stolu svakoga dana imate domaće voće i povrće koje nije tretirano pesticidima.</p>
+        <div class="not-mobile">
+          <div class="footer-logo">
+            <a href="index.html">
+              <img src="images/logo.jpg" alt="">
+            </a>
+            <p>Mi smo obiteljski OPG koji se već deset godina brine da na stolu svakoga dana imate domaće voće i povrće koje nije tretirano pesticidima.</p>
+          </div>
         </div>
         <div class="footer-nav">
           <h4>Linkovi</h4>
