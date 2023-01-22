@@ -697,6 +697,186 @@ div .active {
   .gallery-imgs-mobile{
     display: none;
   }
+
+  .contact-article{
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);
+   }
+   .contact-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+   }
+
+   .product-section .container{
+    text-align: center;
+   }
+
+   .product-section{
+    padding-top: 15px;
+   }
+
+   .product-article img{
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+   }
+
+   .product-article {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    margin: 0 auto;
+   }
+
+   .grid-item{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   }
+
+   .name-price h3{
+    width: fit-content;
+   }
+
+   .name-price p{
+    width: fit-content;
+   }
+
+   .name-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+
+   .grid-item input{
+    width: 50px;
+    border-radius: 0;
+    border: none;
+    height: 30px;
+   }
+
+   .grid-item input:focus{
+    outline: none;
+   }
+
+   .quantitiy img{
+    width: 25px;
+    height: 25px;
+   }
+
+   .quantitiy{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+   }
+
+   [data-quantity] {
+    position: relative;
+    width: 100%;
+    max-width: 11rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+  [data-quantity] legend {
+    display: none;
+  }
+  
+  [data-quantity] input {
+    font-size: 18px;
+    height: 2rem;
+    padding: 0;
+    border-radius: 2rem;
+    border: 0;
+    background: #fff;
+    color: #222;
+    box-shadow: 0 10px 65px -10px rgba(255, 255, 255, 0.25);
+    text-align: center;
+    width: 150px;
+    box-sizing: border-box;
+    font-weight: lighter;
+  }
+  
+  [data-quantity] input:focus {
+    outline: none;
+    box-shadow: 0 5px 55px -10px rgba(255, 255, 255, 1), 0 0 4px #13A868; /* Allows border radius on focus */
+  }
+  
+  [data-quantity] input[type=number]::-webkit-inner-spin-button,
+  [data-quantity] input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  [data-quantity] input[type=number] {
+  
+    appearance: none;
+    -moz-appearance: textfield;
+  }
+  
+  [data-quantity] button {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: -0.4rem;
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: #fff
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><path d="M17 25h16M67 25h16M75 17v16" fill="none" stroke="rgb(59,69,66)" stroke-width="1.5px" stroke-linecap="round" stroke-linejoin="round" /></svg>')
+      no-repeat 0 0;
+    background-size: 5.6rem 2.8rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 100%;
+    border-radius: 1.4rem;
+    cursor: pointer;
+    transition: opacity 0.15s;
+    opacity: 0.5;
+    box-shadow: none;
+  }
+  
+  
+  [data-quantity] button:focus {
+    outline: none;
+  }
+  
+  [data-quantity] button.sub {
+    left: 0rem;
+  }
+  
+  [data-quantity] button.add {
+    right: 0.6rem;
+    background-position-x: -2.8rem;
+  }
+
+  .item img{
+    height: 400px;
+    width: auto;
+  }
+
+  .item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .item p{
+    text-align: left;
+  }
+
+  .quantitiy img{
+   width: 25px;
+   height: 25px;
+  }
 }
 
 @media screen and (min-width: 880px) {
@@ -912,5 +1092,123 @@ div .active {
     position: relative;
     top: 260px;
    }
+   
+   .product-section.responsive{
+    position: relative;
+    top:260px;
+   }
+
+   
+
+   [data-quantity] {
+    position: relative;
+    width: 100%;
+    max-width: 11rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+  [data-quantity] legend {
+    display: none;
+  }
+  
+  [data-quantity] input {
+    font-size: 18px;
+    height: 2rem;
+    padding: 0;
+    border-radius: 2rem;
+    border: 0;
+    background: #fff;
+    color: #222;
+    box-shadow: 0 10px 65px -10px rgba(255, 255, 255, 0.25);
+    text-align: center;
+    width: 150px;
+    box-sizing: border-box;
+    font-weight: lighter;
+  }
+  
+  [data-quantity] input:focus {
+    outline: none;
+    box-shadow: 0 5px 55px -10px rgba(255, 255, 255, 1), 0 0 4px #13A868; /* Allows border radius on focus */
+  }
+  
+  [data-quantity] input[type=number]::-webkit-inner-spin-button,
+  [data-quantity] input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  [data-quantity] input[type=number] {
+  
+    appearance: none;
+    -moz-appearance: textfield;
+  }
+  
+  [data-quantity] button {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: -0.4rem;
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: #fff
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><path d="M17 25h16M67 25h16M75 17v16" fill="none" stroke="rgb(59,69,66)" stroke-width="1.5px" stroke-linecap="round" stroke-linejoin="round" /></svg>')
+      no-repeat 0 0;
+    background-size: 5.6rem 2.8rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 100%;
+    border-radius: 1.4rem;
+    cursor: pointer;
+    transition: opacity 0.15s;
+    opacity: 0.5;
+    box-shadow: none;
+  }
+  
+  
+  [data-quantity] button:focus {
+    outline: none;
+  }
+  
+  [data-quantity] button.sub {
+    left: 0rem;
+  }
+  
+  [data-quantity] button.add {
+    right: 0.6rem;
+    background-position-x: -2.8rem;
+  }
+
+  .item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .quantitiy{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .quantitiy img{
+    width: 25px;
+    height: 25px;
+  }
+
+  .grid-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .product-article{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
 }

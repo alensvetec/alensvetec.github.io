@@ -55,6 +55,36 @@
     }
   }
 
+  function myFunction6() {
+    var x = document.getElementById("naslov-section");
+    var z = document.getElementById("product-section");
+    var a = document.getElementById("footer");
+    if (x.className == "naslov-section") {
+      x.className += " responsive";
+      z.className += " responsive";
+      a.className += " responsive";
+    } else {
+      x.className = "naslov-section";
+      z.className = "product-section";
+      a.className = "footer about-footer";
+    }
+  }
+
+  function myFunction7() {
+    var x = document.getElementById("naslov-section");
+    var z = document.getElementById("product-section");
+    var a = document.getElementById("footer");
+    if (x.className == "naslov-section") {
+      x.className += " responsive";
+      z.className += " responsive";
+      a.className += " responsive";
+    } else {
+      x.className = "naslov-section";
+      z.className = "product-section";
+      a.className = "footer about-footer";
+    }
+  }
+
   let slideIndex = 1;
   showSlides(slideIndex);
   
