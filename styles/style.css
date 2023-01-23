@@ -24,7 +24,7 @@ body{
 
 .navbar{
     background-color: #fff;
-    display: flex;
+    display: block;
     justify-content: space-around;
     height: 5rem;
 }
@@ -35,7 +35,6 @@ body{
     border-radius: 50%;
     position: left;
     margin: 8px;
-    box-shadow: 5px 5px 4px #F5591B;
 }
 
 .nav-button{
@@ -103,7 +102,6 @@ button {
     z-index: 1;
     height: 3rem;
     width: 6rem;
-    box-shadow: 5px 5px 4px #F5591B;
     border-radius: 5px;
    }
    
@@ -515,7 +513,6 @@ div .active {
 
   .about-navbar button{
     color: #000;
-    box-shadow: 5px 5px 4px #333;
   }
 
   .about-navbar button:hover span::before {
@@ -655,11 +652,6 @@ div .active {
     background-color: #F5591B;
     border: 2px;
     border-color: #F5591B;
-    box-shadow: 5px 5px 4px #F5591B;
-   }
-
-   .submit-button:hover{
-    box-shadow: 5px 5px 4px #000;
    }
 
    .map-section{
@@ -720,9 +712,57 @@ div .active {
    }
 
    .product-article img{
-    height: 200px;
+    height: auto;
     width: 100%;
     border-radius: 5px;
+   }
+
+   .one{
+    background-image: url('../images/apples-gab3d2f1a6_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+   .two{
+    background-image: url('../images/bell-peppers-gb3b050b08_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+   .three{
+    background-image: url('../images/blueberries-gdcdfa9f55_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+   .four{
+    background-image: url('../images/carrots-ready-eat.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+   .five{
+    background-image: url('../images/garlic-ga6e9166f9_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+   .six{
+    background-image: url('../images/lemon-g7e65c1732_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+   .seven{
+    background-image: url('../images/top-view-cucumber-brown-wooden-horizontal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+   .eight{
+    background-image: url('../images/onions-blanket.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
    }
 
    .product-article {
@@ -877,6 +917,18 @@ div .active {
    width: 25px;
    height: 25px;
   }
+
+  .navbar .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .image-div{
+    height: 210px;
+    border-radius: 15px;
+  }
+
 }
 
 @media screen and (min-width: 880px) {
@@ -899,7 +951,7 @@ div .active {
 
 @media screen and (min-width: 1080px) {
     .container{
-        max-width: 1050px;
+        max-width: 920px;
     }
 
     .article-image{
@@ -921,7 +973,7 @@ div .active {
 @media screen and (min-width: 1470px) {
 
     .container{
-        max-width: 1440px;
+        max-width: 920px;
     }
     
 }
@@ -937,6 +989,10 @@ div .active {
     }
 
     .navbar{
+        display: grid;
+    }
+
+    .navbar .container{
         display: grid;
     }
 
@@ -959,13 +1015,13 @@ div .active {
         margin-top: 0px;
         background-color: #fff;
         padding-top: 10px;
+        left: 0;
     }
     .nav-button.responsive a {
         display: flex;
     }
     .nav-button.responsive button {
         width: 16rem;
-        box-shadow: 5px 5px 4px #F5591B;
     }
    
     button span::before {
@@ -1211,4 +1267,41 @@ div .active {
     gap: 20px;
   }
 
+}
+
+
+@media screen and (max-width:325px){
+  .fact-section{
+    height: 126px;
+  }
+
+  .footer{
+    bottom: auto;
+  }
+
+  .container{
+    max-width: 260px;
+  }
+}
+
+
+@media screen and (max-width:270px){
+  .fact-section{
+    height: 145px;
+  }
+
+  .footer{
+    bottom: auto;
+  }
+}
+
+
+@media screen and (max-width:225px){
+  .fact-section{
+    height: 162px;
+  }
+
+  .footer{
+    bottom: auto;
+  }
 }
